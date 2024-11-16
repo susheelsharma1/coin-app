@@ -141,7 +141,7 @@ img.coin {
 .fixed.card {
   bottom: 85px;
   background: #882016;
-  width: calc(100% - 100px);
+  width: calc(100% - 70px);
   left: 0;
   right: 0;
   color: #fff;
@@ -173,7 +173,7 @@ img.coin {
   background: hsla(0, 0%, 99%, .03);
   border: 1px solid hsla(0, 0%, 100%, .05);
 }
-.footer-nav  .grid button .text-sm {
+.footer-nav  .grid a .text-sm {
   /* color: #767778; */
   font-weight: 300;
   font-size: 10px;
@@ -187,16 +187,19 @@ img.coin {
   width: 100%;
   max-width: 100%;
 }
-.footer-nav .grid button{
+.footer-nav .grid a{
   border:1px solid transparent;
 }
-.footer-nav .grid button:hover {
+.footer-nav a button{
+background: transparent;
+}
+.footer-nav .grid a:hover {
   --tw-bg-opacity: 1;
   box-shadow: 0 0 16px 0 rgba(8, 38, 52, .2);
   background: hsla(0, 0%, 99%, .03);
   border: 1px solid hsla(0, 0%, 100%, .05);
 }
-.footer-nav .grid button {
+.footer-nav .grid a {
   padding: 3px;
   height: 100%;
   width: 25%;
