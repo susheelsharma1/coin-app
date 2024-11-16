@@ -1,10 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+body{
+  font-family: "Outfit", sans-serif;
+  font-weight:400;
+}
 #root {
   max-width: 1280px;
   margin: 0 auto;
-  padding: 2rem 2rem;
+  padding: 2rem 1rem;
   text-align: center;
   min-height: 100vh;
+  background: linear-gradient(180deg, rgba(87,16,7,1) 0%, rgba(131,31,30,1) 30%, rgba(65,9,2,1) 100%);
 }
 
 .logo {
@@ -53,7 +58,7 @@
   right: 0;
   margin: 0 auto;
   overflow: hidden;
-  background: linear-gradient(180deg, rgba(87,16,7,1) 0%, rgba(131,31,30,1) 30%, rgba(65,9,2,1) 100%);
+
 }
 
 .drop {
@@ -221,4 +226,54 @@ background: transparent;
   letter-spacing: 2px;
   font-family: "Outfit", sans-serif;
   font-weight: 700;
+}
+.task-view .vertical-tasks {
+  -webkit-backdrop-filter: blur(7px);
+  backdrop-filter: blur(7px);
+  box-shadow: 0 0 16px 0 rgba(8, 38, 52, .2);
+  background: hsl(0deg 0% 89.12% / 20%);
+  border: 1px solid hsla(0, 0%, 100%, .05);
+  padding: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 4px;
+}
+.task-view .vertical-tasks .tasks-list {
+  text-align: left;
+  color:  rgb(255 255 255 / 89%);
+}
+.task-view {
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+}
+.tasks-list h6 {
+  font-size: 13px;
+  margin-top: 5px;
+}
+.tasks-button button {
+  background: #e6a359;
+}
+.token-earns h4 {
+  font-size: 52px;
+  font-weight: 700;
+  color: #ffffff;
+  vertical-align: text-bottom;
+  /* text-shadow: 2px 0 #fff, -2px 0 #fff, 0 2px #fff, 0 -2px #fff,
+             1px 1px #fff, -1px -1px #fff, 1px -1px #fff, -1px 1px #fff; */
+  letter-spacing: 3px;
+  line-height: 1;
+}
+.token-earns {
+  margin: 36px 0 50px;
+}
+.task-point-earnd .app-logo {
+  margin: 40px 0 0;
+}
+.token-earns h5 {
+  color: #e9e9e9;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 25px;
 }
