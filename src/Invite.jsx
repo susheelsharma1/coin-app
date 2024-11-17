@@ -18,5 +18,6 @@ const Invite = () => (
       </div>
     </div>
   </>
+  
 );
 export default Invite;
