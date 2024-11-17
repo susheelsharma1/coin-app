@@ -1,4 +1,3 @@
-import React, { useState } from "react";
 import coinIcon from "./assets/coin-icon.png";
 
 const Task = () => {

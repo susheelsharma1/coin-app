@@ -3,6 +3,7 @@ import "./App.css";
 import Task from "./Task";
 import Layout from "./Layout";
 import Home from "./Home";
+import Invite from "./Invite";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
           <Route path="task" element={<Task />} />
+          <Route path="invite" element={<Invite />} />
         </Route>
       </Routes>
     </BrowserRouter>
