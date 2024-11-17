@@ -4,9 +4,9 @@ body{
   font-weight:400;
 }
 #root {
-  max-width: 1280px;
+  max-width: 100%;
   margin: 0 auto;
-  padding: 2rem 1rem;
+  padding: 0rem 1rem;
   text-align: center;
   min-height: 100vh;
   background: linear-gradient(180deg, rgba(87,16,7,1) 0%, rgba(131,31,30,1) 30%, rgba(65,9,2,1) 100%);
@@ -110,7 +110,7 @@ img.coin {
 }
 .home-app {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   min-height: calc(100vh - 4rem);
 }
@@ -141,7 +141,7 @@ img.coin {
   100% {opacity: 0}
 }
 .home-app .app-logo {
-  margin-top: -40px;
+  margin-top: 130px;
 }
 .fixed.card {
   bottom: 85px;
@@ -214,7 +214,7 @@ background: transparent;
   position: absolute;
   left: 0;
   right: 0;
-  top: 67%;
+  top: 58%;
 
 }
 .wrap .drop {
@@ -243,19 +243,19 @@ background: transparent;
   text-align: left;
   color:  rgb(255 255 255 / 89%);
 }
-.task-view {
+.task-view , .rewards-earnd{
   display: flex;
   flex-direction: column;
   gap: 13px;
 }
-.tasks-list h6 {
+.tasks-list h6, .rewards-earnd .vertical-tasks .tasks-list h6 {
   font-size: 13px;
   margin-top: 5px;
 }
 .tasks-button button {
   background: #e6a359;
 }
-.token-earns h4 {
+.token-earns h4 ,.rewards-earnd .vertical-tasks .tasks-list h4{
   font-size: 52px;
   font-weight: 700;
   color: #ffffff;
@@ -266,7 +266,7 @@ background: transparent;
   line-height: 1;
 }
 .token-earns {
-  margin: 36px 0 50px;
+  margin: 36px 0 30px;
 }
 .task-point-earnd .app-logo {
   margin: 40px 0 0;
@@ -276,4 +276,39 @@ background: transparent;
   text-transform: uppercase;
   font-weight: 500;
   font-size: 25px;
+}
+.task-view .heading, .rewards-earnd .heading{
+  text-align: left;
+}
+.rewards-earnd {
+  margin: 60px 0;
+}
+.task-view .heading h6, .rewards-earnd .heading h6 {
+  color: #ffffff;
+  font-size: 21px;
+}
+.rewards-earnd .vertical-tasks {
+  -webkit-backdrop-filter: blur(7px);
+  backdrop-filter: blur(7px);
+  border-bottom: 1px solid hsla(0, 0%, 100%, .05);
+  padding: 8px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 0;
+}
+.rewards-earnd .vertical-tasks:last-child {
+  border: 0;
+}
+.rewards-earnd .vertical-tasks .tasks-list {
+  text-align: left;
+  color: #fff;
+}
+.reward-days p {
+  font-size: 16px;
+  color: #fff;
+}
+.reward-days span {
+  font-size: 14px;
+  margin-left: 5px;
 }
