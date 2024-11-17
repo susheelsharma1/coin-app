@@ -1,6 +1,6 @@
 import coinIcon from "./assets/coin-icon.png";
 
-const Invite = () => {
+const Invite = () => (
   <>
     <div className="invite">
       <div className="app-logo">
@@ -14,8 +14,9 @@ const Invite = () => {
             maxWidth: "150px",
           }}
         />
+        Hello from invite page
       </div>
     </div>
-  </>;
-};
+  </>
+);
 export default Invite;
